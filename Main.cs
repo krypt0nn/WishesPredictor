@@ -29,15 +29,34 @@ namespace GenshinWishesPredictor
 
             double anyChance = 0, eventChance = 0;
 
-            for (int i = doneWishes + 1; i <= Math.Min(wishes + doneWishes, 90); ++i)
+            if (this.checkBox2.Checked)
             {
-                double currAnyChance = Main.WishProbability(i);
+                wishes += doneWishes;
 
-                anyChance += currAnyChance;
-                eventChance += currAnyChance / 2;
+                for (int i = 1; i <= Math.Min(wishes, 90); ++i)
+                {
+                    double currAnyChance = Main.WishProbability(i);
 
-                for (int j = 1; j <= Math.Min(wishes + doneWishes - i, 90); ++j)
-                    eventChance += Main.WishProbability(j) * currAnyChance / 2;
+                    anyChance += currAnyChance;
+                    eventChance += currAnyChance / 2;
+
+                    for (int j = 1; j <= Math.Min(wishes - i, 90); ++j)
+                        eventChance += Main.WishProbability(j) * currAnyChance / 2;
+                }
+            }
+
+            else
+            {
+                for (int i = doneWishes + 1; i <= Math.Min(wishes + doneWishes, 90); ++i)
+                {
+                    double currAnyChance = Main.WishProbability(i);
+
+                    anyChance += currAnyChance;
+                    eventChance += currAnyChance / 2;
+
+                    for (int j = 1; j <= Math.Min(wishes + doneWishes - i, 90); ++j)
+                        eventChance += Main.WishProbability(j) * currAnyChance / 2;
+                }
             }
 
             anyChance = Math.Max(Math.Min(anyChance, 1), 0);
@@ -95,6 +114,35 @@ namespace GenshinWishesPredictor
 
                 this.Height += 40;
             }
+
+            this.UpdateProbabilities(sender, e);
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Total amount of primogems you have or want to spend on event banner", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Amount of made wishes in event banners after the last 5* character. If you're trying to count the whole probability this parameter will be counted as number of wishes you have or want to use on event banner", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Enable this if you previously got a non-event 5* character from an event banner. This will change calculation results because you'll have 100% probability that your next 5* character will be event one", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You can calculate two types of probability:\n\nIf disabled - you will calculate probability of getting a 5* character for next some wishes you can do with your primogems\n\nIf enabled - you will calculate probability of getting a 5* character for all primogems and wishes you have\n\nThat's not quite clear difference so I'll give you an example: if you have already done 88 wishes and have 160 primogems\n\nWith disabled option you will see 0.35% probability to get 5* character\nWith enabled - 41.47%\n\nThat's because probability to get any 5* character for 89 wishes is 41.47%, but to get it for 1 wish after 88 ones is 0.35%", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            this.label7.Text = this.checkBox2.Checked ?
+                "Amount of available wishes:" :
+                "Amount of made wishes:";
 
             this.UpdateProbabilities(sender, e);
         }
