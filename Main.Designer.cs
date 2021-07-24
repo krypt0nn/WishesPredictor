@@ -85,7 +85,7 @@ namespace GenshinWishesPredictor
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Open Sans SemiBold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label2.Location = new System.Drawing.Point(38, 35);
+            this.label2.Location = new System.Drawing.Point(113, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(223, 37);
             this.label2.TabIndex = 3;
@@ -95,7 +95,7 @@ namespace GenshinWishesPredictor
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(262, 44);
+            this.label3.Location = new System.Drawing.Point(337, 44);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(163, 26);
             this.label3.TabIndex = 4;
@@ -105,7 +105,7 @@ namespace GenshinWishesPredictor
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(58, 312);
+            this.label4.Location = new System.Drawing.Point(92, 312);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(353, 26);
             this.label4.TabIndex = 5;
@@ -115,7 +115,7 @@ namespace GenshinWishesPredictor
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(40, 352);
+            this.label5.Location = new System.Drawing.Point(74, 352);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(371, 26);
             this.label5.TabIndex = 6;
@@ -126,7 +126,7 @@ namespace GenshinWishesPredictor
             this.anyChance.AutoSize = true;
             this.anyChance.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.anyChance.ForeColor = System.Drawing.Color.SteelBlue;
-            this.anyChance.Location = new System.Drawing.Point(407, 312);
+            this.anyChance.Location = new System.Drawing.Point(441, 312);
             this.anyChance.Name = "anyChance";
             this.anyChance.Size = new System.Drawing.Size(18, 26);
             this.anyChance.TabIndex = 7;
@@ -137,7 +137,7 @@ namespace GenshinWishesPredictor
             this.eventChance.AutoSize = true;
             this.eventChance.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eventChance.ForeColor = System.Drawing.Color.SteelBlue;
-            this.eventChance.Location = new System.Drawing.Point(407, 352);
+            this.eventChance.Location = new System.Drawing.Point(441, 352);
             this.eventChance.Name = "eventChance";
             this.eventChance.Size = new System.Drawing.Size(18, 26);
             this.eventChance.TabIndex = 8;
