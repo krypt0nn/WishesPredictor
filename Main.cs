@@ -13,28 +13,30 @@ namespace GenshinWishesPredictor
 
         private void UpdateProbabilities(object sender, EventArgs e)
         {
-            int wishes;
+            int wishes, doneWishes;
 
             try
             {
-                wishes = int.Parse(this.textBox2.Text) + int.Parse(this.textBox1.Text) / 160;
+                wishes = int.Parse(this.textBox1.Text) / 160;
+                doneWishes = int.Parse(this.textBox2.Text);
             }
 
             catch(Exception)
             {
                 wishes = 0;
+                doneWishes = 0;
             }
 
             double anyChance = 0, eventChance = 0;
 
-            for (int i = 1; i <= Math.Min(wishes, 90); ++i)
+            for (int i = doneWishes + 1; i <= Math.Min(wishes + doneWishes, 90); ++i)
             {
                 double currAnyChance = Main.WishProbability(i);
 
                 anyChance += currAnyChance;
                 eventChance += currAnyChance / 2;
 
-                for (int j = 1; j <= Math.Min(wishes - i, 90); ++j)
+                for (int j = 1; j <= Math.Min(wishes + doneWishes - i, 90); ++j)
                     eventChance += Main.WishProbability(j) * currAnyChance / 2;
             }
 

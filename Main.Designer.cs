@@ -50,10 +50,9 @@ namespace GenshinWishesPredictor
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(45, 123);
+            this.pictureBox1.Location = new System.Drawing.Point(61, 123);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -62,7 +61,7 @@ namespace GenshinWishesPredictor
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(133, 190);
+            this.textBox1.Location = new System.Drawing.Point(149, 190);
             this.textBox1.MaxLength = 12;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(128, 22);
@@ -74,7 +73,7 @@ namespace GenshinWishesPredictor
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(128, 123);
+            this.label1.Location = new System.Drawing.Point(144, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(133, 52);
             this.label1.TabIndex = 2;
@@ -148,7 +147,7 @@ namespace GenshinWishesPredictor
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(411, 190);
+            this.textBox2.Location = new System.Drawing.Point(427, 190);
             this.textBox2.MaxLength = 12;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(92, 22);
@@ -161,7 +160,7 @@ namespace GenshinWishesPredictor
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(45, 245);
+            this.checkBox1.Location = new System.Drawing.Point(234, 245);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(152, 30);
             this.checkBox1.TabIndex = 11;
@@ -172,7 +171,7 @@ namespace GenshinWishesPredictor
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(406, 123);
+            this.label7.Location = new System.Drawing.Point(422, 123);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(145, 52);
             this.label7.TabIndex = 14;
@@ -181,10 +180,9 @@ namespace GenshinWishesPredictor
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(323, 123);
+            this.pictureBox2.Location = new System.Drawing.Point(339, 123);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
             // 
@@ -211,7 +209,7 @@ namespace GenshinWishesPredictor
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Main";
-            this.Text = "Wishes Predictor";
+            this.Text = "Wishes Predictor 1.1.0";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
